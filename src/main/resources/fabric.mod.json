@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "therubymod",
+  "version": "${version}",
+  "name": "Therubymod",
+  "description": "",
+  "authors": [
+    "10Meisterbaelle"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/therubymod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.xmeisterbaelle.therubymod.client.TherubymodClient"
+    ],
+    "main": [
+      "com.xmeisterbaelle.therubymod.Therubymod"
+    ]
+  },
+  "mixins": [
+    "therubymod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.13.2",
+    "fabric": "*",
+    "minecraft": "1.18.1"
+  }
+}
