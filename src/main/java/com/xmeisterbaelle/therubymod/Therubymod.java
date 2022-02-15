@@ -1,6 +1,5 @@
 package com.xmeisterbaelle.therubymod;
 
-import com.xmeisterbaelle.therubymod.items.RubySwordItem;
 import com.xmeisterbaelle.therubymod.tools.RubySwordTool;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
