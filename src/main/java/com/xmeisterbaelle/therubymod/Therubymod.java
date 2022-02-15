@@ -13,11 +13,13 @@ import net.minecraft.util.registry.Registry;
 public class Therubymod implements ModInitializer {
     public static ToolItem RUBY_SWORD = new SwordItem(RubySwordTool.INSTANCE, 5, 96F, new Item.Settings().group(ItemGroup.COMBAT));
     public static final Block RUBY_ORE = new Block(FabricBlockSettings.of(Material.METAL).strength(3.5F, 3));
+    public static final Item RUBY = new Item(new FabricItemSettings().group(ItemGroup.MISC));
 
     @Override
     public void onInitialize() {
         Registry.register(Registry.ITEM, new Identifier("therubymod", "ruby_sword"), RUBY_SWORD);
         Registry.register(Registry.BLOCK, new Identifier("therubymod", "ruby_ore"), RUBY_ORE);
         Registry.register(Registry.ITEM, new Identifier("therubymod", "ruby_ore"), new BlockItem(RUBY_ORE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
+        Registry.register(Registry.ITEM, new Identifier("therubymod", "ruby"), RUBY);
     }
 }
