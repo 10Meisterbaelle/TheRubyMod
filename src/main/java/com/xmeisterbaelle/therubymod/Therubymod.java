@@ -11,8 +11,8 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class Therubymod implements ModInitializer {
-    public static ToolItem RUBY_SWORD = new SwordItem(RubySwordTool.INSTANCE, 5, 96F, new Item.Settings().group(ItemGroup.COMBAT));
-    public static final Block RUBY_ORE = new Block(FabricBlockSettings.of(Material.METAL).strength(3.5F, 3));
+    public static ToolItem RUBY_SWORD = new SwordItem(RubySwordTool.INSTANCE, 5, 96f, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final Block RUBY_ORE = new Block(FabricBlockSettings.of(Material.METAL).strength(3.5f)); // TODO: Faster Mining with Pickaxe & Efficiency
     public static final Item RUBY = new Item(new FabricItemSettings().group(ItemGroup.MISC));
 
     @Override
