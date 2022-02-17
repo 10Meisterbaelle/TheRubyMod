@@ -7,7 +7,7 @@ public class RubySwordTool implements ToolMaterial {
     public static final RubySwordTool INSTANCE = new RubySwordTool();
     @Override
     public int getDurability() {
-        return 10;
+        return 500;
     }
 
     @Override

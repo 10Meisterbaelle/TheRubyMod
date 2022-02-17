@@ -36,7 +36,7 @@ public class RubyArmorMaterial implements ArmorMaterial {
 
     @Override
     public String getName() {
-        return "ruby_armor";
+        return "ruby";
     }
 
     @Override
