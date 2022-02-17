@@ -1,5 +1,6 @@
 package com.xmeisterbaelle.therubymod.armor;
 
+import com.xmeisterbaelle.therubymod.Therubymod;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -31,7 +32,7 @@ public class RubyArmorMaterial implements ArmorMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return null;
+        return Ingredient.ofItems(Therubymod.RUBY);
     }
 
     @Override

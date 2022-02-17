@@ -1,5 +1,6 @@
 package com.xmeisterbaelle.therubymod.tools;
 
+import com.xmeisterbaelle.therubymod.Therubymod;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
@@ -32,6 +33,6 @@ public class RubySwordTool implements ToolMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return null;
+        return Ingredient.ofItems(Therubymod.RUBY);
     }
 }
