@@ -1,5 +1,6 @@
 package com.xmeisterbaelle.therubymod;
 
+import com.xmeisterbaelle.therubymod.armor.RubyArmorMaterial;
 import com.xmeisterbaelle.therubymod.entities.RubySlimeEntity;
 import com.xmeisterbaelle.therubymod.tools.RubySwordTool;
 import net.fabricmc.api.ModInitializer;
@@ -11,6 +12,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
@@ -25,6 +27,11 @@ public class Therubymod implements ModInitializer {
             new Identifier("therubymod", "ruby_slime"),
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, RubySlimeEntity::new).dimensions(EntityDimensions.fixed(0.75f, 0.75f)).build()
     );
+    public static final ArmorMaterial RUBY_ARMOR_MATERIAL = new RubyArmorMaterial();
+    public static final Item RUBY_HELMET = new ArmorItem(RUBY_ARMOR_MATERIAL, EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final Item RUBY_CHESTPLATE = new ArmorItem(RUBY_ARMOR_MATERIAL, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final Item RUBY_LEGGINGS = new ArmorItem(RUBY_ARMOR_MATERIAL, EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final Item RUBY_BOOTS = new ArmorItem(RUBY_ARMOR_MATERIAL, EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT));
 
     @Override
     public void onInitialize() {
@@ -33,5 +40,9 @@ public class Therubymod implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("therubymod", "ruby_ore"), new BlockItem(RUBY_ORE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
         Registry.register(Registry.ITEM, new Identifier("therubymod", "ruby"), RUBY);
         FabricDefaultAttributeRegistry.register(RUBY_SLIME, RubySlimeEntity.createMobAttributes());
+        Registry.register(Registry.ITEM, new Identifier("therubymod", "ruby_helmet"), RUBY_HELMET);
+        Registry.register(Registry.ITEM, new Identifier("therubymod", "ruby_chestplate"), RUBY_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier("therubymod", "ruby_leggings"), RUBY_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier("therubymod", "ruby_boots"), RUBY_BOOTS);
     }
 }
