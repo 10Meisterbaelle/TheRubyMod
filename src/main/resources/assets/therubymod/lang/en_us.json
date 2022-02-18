@@ -1,5 +1,9 @@
 {
   "item.therubymod.ruby_sword": "Ruby Sword",
   "block.therubymod.ruby_ore": "Ruby Ore",
-  "item.therubymod.ruby": "Ruby"
+  "item.therubymod.ruby": "Ruby",
+  "item.therubymod.ruby_helmet": "Ruby Helmet",
+  "item.therubymod.ruby_chestplate": "Ruby Chestplate",
+  "item.therubymod.ruby_leggings": "Ruby Leggings",
+  "item.therubymod.ruby_boots": "Ruby Boots"
 }

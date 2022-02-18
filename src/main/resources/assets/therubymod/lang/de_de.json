@@ -1,5 +1,9 @@
 {
   "item.therubymod.ruby_sword": "Rubinschwert",
   "block.therubymod.ruby_ore": "Rubinerz",
-  "item.therubymod.ruby": "Rubin"
+  "item.therubymod.ruby": "Rubin",
+  "item.therubymod.ruby_helmet": "Rubinhelm",
+  "item.therubymod.ruby_chestplate": "Rubinharnsch",
+  "item.therubymod.ruby_leggings": "Rubinbeinschutz",
+  "item.therubymod.ruby_boots": "Rubinstiefel"
 }
